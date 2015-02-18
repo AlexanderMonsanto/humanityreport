@@ -1,2 +1,3 @@
-# humanityreport
-A an that allows victims and their friends and families to report human rights abuses
+# humanity_report
+
+a [Sails](http://sailsjs.org) application
