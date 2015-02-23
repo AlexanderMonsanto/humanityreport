@@ -1,4 +1,11 @@
 {
+  "Hello":"Hola",
+  "The Humanity Report":"Informe Humanidad",
   "Welcome": "Bienvenido",
-  "A brand new app.": "Una aplicación de la nueva marca."
+  "A brand new app.": "Una aplicación de la nueva marca.",
+  "home.welcometext":"¡hola!",
+  "Report Human Rights Violations":"Informe Violaciónes de Derechos Humanos",
+  "Find":"Buscar",
+  "Report":"Reportar",
+  "About":"Sobre"
 }

@@ -1,4 +1,10 @@
 {
+  "Hello":"Bon Jour",
+  "The Humanity Report":"Le Rapport de l'Humanité",
 	"Welcome": "Bienvenue",
-	"A brand new app.": "Une toute nouvelle application."
+	"A brand new app.": "Une toute nouvelle application.",
+  "Report Human Rights Violations":"Signaler les violations des droits de l'homme",
+  "Find":"Trouver",
+  "Report":"Signaler",
+  "About":"Sur"
 }

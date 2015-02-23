@@ -32,9 +32,15 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  }
+  '/': "SiteController.index",
+  '/find':"SiteController.find",
+  '/about':"SiteController.about",
+
+
+
+  'get /report/new':"ReportController.new",
+  'post /report':"ReportController.create",
+  '/report/:id': "ReportController.show"
 
   /***************************************************************************
   *                                                                          *

@@ -17,9 +17,16 @@ module.exports = {
    * environment (see config/connections.js and config/models.js )           *
    ***************************************************************************/
 
-  // models: {
-  //   connection: 'someMysqlServer'
-  // },
+    connections:{
+        myMongoDbServerProd: {
+            adapter: 'sails-postgresql',
+            url: process.env.HEROKU_POSTGRESQL_MAUVE_URL
+        }
+    },
+
+    models:{
+        connection: 'myMongoDbServerProd'
+    }
 
   /***************************************************************************
    * Set the port in the production environment to 80                        *

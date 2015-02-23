@@ -1,0 +1,73 @@
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.4/Leaflet.fullscreen.min.js'></script>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Find Violations</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class='col-md-12'>
+                <div id="map"></div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+<script>
+
+    var mapData = <%- JSON.stringify(data) %>;
+
+    L.mapbox.accessToken = 'pk.eyJ1IjoiamFtMTk2MHVzIiwiYSI6ImhxdzlHV0EifQ.0XUWJ9J55Q_1MlEzCA_IIw';
+    var geocoder = L.mapbox.geocoder('mapbox.places');
+    // Create a map in the div #map
+    var map = L.mapbox.map('map', 'jam1960us.l8h9onal').setView([48.5, -121.6], 5);
+    L.control.fullscreen().addTo(map);
+
+    for(var i=0; i<mapData.length; i++){
+        if(!mapData[i].latitude || !mapData[i].longitude) continue;
+
+        var geojson = L.mapbox.featureLayer({
+            type: 'Feature',
+            geometry: {
+                type: "Point",
+                // coordinates here are in longitude, latitude order because
+                // x, y is the standard for GeoJSON and many formats
+                coordinates: [
+                  mapData[i].longitude,
+                  mapData[i].latitude
+                ]
+            },
+            properties: {
+                title: mapData[i].title,
+                description:
+                    'type: ' + mapData[i].type + '<br>' +
+                    'description: ' + mapData[i].description,
+                // one can customize markers by adding simplestyle properties
+                // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+                'marker-size': 'large',
+                'marker-color': '#f44',
+                'marker-symbol': 'roadblock',
+                url: '/report/' + mapData[i].id
+
+            }
+        }).addTo(map);
+
+        geojson.on('click', function(e) {
+            e.layer.unbindPopup();
+            window.open(e.layer.feature.properties.url);
+        });
+
+    }
+</script>

@@ -1,4 +1,6 @@
 {
+
 	"Welcome": "Welcome",
-	"A brand new app.": "A brand new app."
+	"A brand new app.": "A brand new app.",
+  "home.welcometext":"some long text welcoming people to the site!"
 }

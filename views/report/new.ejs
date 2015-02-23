@@ -1,0 +1,94 @@
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Report Human Rights Abuse</h2>
+                    <hr class="eye-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                    <form name="violationReport" id="violationReport" method="post" action="/report">
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Title</label>
+                                <input type="text" class="form-control" placeholder="Title" name="title" id="title" required data-validation-required-message="Please enter a title.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Description</label>
+                                <textarea rows="10" class="form-control" name="description" placeholder="Description" id="description" required data-validation-required-message="Please enter a Description"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Type</label>
+                                <select style="color:black" class="form-control" id="Type" name="type" placeholder="Type" required data-validation-required-message="Please enter type.">
+                                    <option>Workers Rights Abuse</option>
+                                    <option>Sexual Abuse/Human Trafficing</option>
+                                    <option>Displacement</option>
+                                    <option>Anti-LGBT Violence</option>
+                                    <option>Womens Rights Abuse</option>
+                                    <option>Religious Violence</option>
+                                    <option>Ethnic Violence</option>
+                                    <option>Environmental Degridation</option>
+                                    <option>Privacy Violations</option>
+                                    <option>Other</option>
+                                </select>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Street</label>
+                                <input type="text" class="form-control" name="street" placeholder="Street" id="Street" required data-validation-required-message="Please enter a Street.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>City</label>
+                                <input type="text" class="form-control" name="city" placeholder="City" id="City" required data-validation-required-message="Please enter a City.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Province</label>
+                                <input type="text" class="form-control" name="province" placeholder="Province" id="Province" required data-validation-required-message="Please enter a Province.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Postal Code</label>
+                                <input type="text" class="form-control" name="postalCode" placeholder="Postal Code" id="PostalCode" required data-validation-required-message="Please enter a Postal Code.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Country</label>
+                                <input type="text" class="form-control" name="country" placeholder="Country" id="Country" required data-validation-required-message="Please enter a Country.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
