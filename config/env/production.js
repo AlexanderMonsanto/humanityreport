@@ -18,14 +18,14 @@ module.exports = {
    ***************************************************************************/
 
     connections:{
-        myMongoDbServerProd: {
+        myPostgresqlServer: {
             adapter: 'sails-postgresql',
             url: process.env.HEROKU_POSTGRESQL_MAUVE_URL
         }
     },
 
     models:{
-        connection: 'myMongoDbServerProd'
+        connection: 'myPostgresqlServer'
     }
 
   /***************************************************************************
