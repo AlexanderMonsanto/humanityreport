@@ -2,11 +2,12 @@
     <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.4/Leaflet.fullscreen.min.js'></script>
 
     <!-- Portfolio Grid Section -->
+    <br>
     <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Find Violations</h2>
+                    <h3>Find Violations</h3>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -32,7 +33,7 @@
     L.mapbox.accessToken = 'pk.eyJ1IjoiamFtMTk2MHVzIiwiYSI6ImhxdzlHV0EifQ.0XUWJ9J55Q_1MlEzCA_IIw';
     var geocoder = L.mapbox.geocoder('mapbox.places');
     // Create a map in the div #map
-    var map = L.mapbox.map('map', 'jam1960us.l8h9onal').setView([48.5, -121.6], 2);
+    var map = L.mapbox.map('map', 'jam1960us.l8h9onal').setView([24.5, -121.6], 2);
     L.control.fullscreen().addTo(map);
 
     for(var i=0; i<mapData.length; i++){

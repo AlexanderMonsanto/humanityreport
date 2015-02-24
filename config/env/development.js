@@ -21,7 +21,6 @@ module.exports = {
         myPostgresqlServer: {
             adapter: 'sails-postgresql',
             host: 'localhost',
-            port: 27017,
             database: 'humanityreport'
         }
     },
