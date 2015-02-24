@@ -18,15 +18,15 @@ module.exports = {
    ***************************************************************************/
 
     connections:{
-        myMongoDbServer: {
+        myPostgresqlServer: {
             adapter: 'sails-postgresql',
             host: 'localhost',
             port: 27017,
-            database: 'sails_blog2'
+            database: 'humanityreport'
         }
     },
     models:{
-        connection: 'myMongoDbServer',
+        connection: 'myPostgresqlServer',
         migrate: 'alter'
     }
 
