@@ -78,7 +78,7 @@ hr.eye-primary {
 }
 
 h3 {
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 hr.eye-primary:after {
@@ -232,6 +232,9 @@ section.success {
     color: #fff;
     background: #272b30;
 }
+section.success h3 {
+    color: #c8c8c8;
+}
 
 @media(max-width:767px) {
     section {
@@ -321,7 +324,7 @@ section.success {
 .floating-label-form-group {
     position: relative;
     margin-bottom: 0;
-    padding-bottom: .5em;
+    padding-bottom: .2em;
     border-bottom: 1px solid #eee;
 }
 
