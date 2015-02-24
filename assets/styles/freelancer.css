@@ -50,7 +50,7 @@ h6 {
 
 hr.star-light,
 hr.star-primary {
-    margin: 25px auto 75px;
+    margin: 25px auto 50px;
     padding: 0;
     max-width: 250px;
     border: 0;
@@ -69,12 +69,16 @@ hr.star-primary:after {
     font-size: 2em;
 }
 hr.eye-primary {
-    margin: 25px auto 90px;
+    margin: 25px auto 80px;
     padding: 0;
     max-width: 250px;
     border: 0;
     border-top: solid 5px;
     text-align: center;
+}
+
+h3 {
+    margin-top: 25px;
 }
 
 hr.eye-primary:after {
@@ -140,7 +144,7 @@ header .intro-text .name {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
-    margin: -40px auto 0px;
+    margin: -20px auto 0px;
 }
 
 header .intro-text .skills {
